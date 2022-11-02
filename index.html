@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>To-Do-List</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- Main container -->
+   <main class="main-container">
+      <h1>To Do List</h1>
+      <form class="input-tasks-div">
+         <!-- Input -->
+         <input type="text" class="task-input" placeholder="Enter a task">
+         <input type="hidden" id="save-task-index">
+         <!-- Buttons -->
+         <div class="btn-div">
+            <button class="btn add-task-btn">Add task</button>
+            <button class="btn save-task-btn" style="display: none;">Save Task</button>
+            <button class="btn clear-all-btn">Clear all</button>
+         </div>
+      </form>
+      <table>
+         <!-- Task table -->
+         <thead>
+            <tr>
+               <th>Tasks</th>
+               <th>Actions</th>
+            </tr>
+         </thead>
+         <!-- All tasks displayed -->
+         <tbody id="all-tasks">
+         </tbody>
+      </table>
+   </main>
+
+   <!-- Script -->
+   <script src="main.js"></script>
+</body>
+
+</html>

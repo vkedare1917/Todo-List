@@ -1,0 +1,134 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   box-sizing: border-box;
+   outline: none;
+   letter-spacing: 1px;
+}
+
+h1 {
+   margin: 8px;
+   font-size: 1.8rem;
+   text-align: center;
+}
+
+/* Input */
+.input-tasks-div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+}
+
+.input-tasks-div input[type="text"] {
+   margin: 5px;
+   padding: 0.75rem;
+   border: 1px solid #0099CC;
+   width: 20%;
+   text-transform: capitalize;
+   font-weight: lighter;
+   transition: 0.3s border ease-in;
+}
+
+.input-tasks-div input[type="text"]:hover {
+   border: 1px solid #33b5e5;
+}
+
+input[type="text"]::placeholder {
+   transition: 0.3s all ease-in;
+   font-style: italic;
+   font-weight: lighter;
+   font-size: 0.85rem;
+   color: #0099CC;
+}
+
+input[type="text"]:hover::placeholder {
+   color: #33b5e5;
+}
+
+/* Buttons */
+.btn-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-div .btn {
+   cursor: pointer;
+   margin: 8px;
+   padding: 0.7rem;
+   color: white;
+   font-size: 1rem;
+   background-color: #0099CC;
+   opacity: 0.85;
+   border: none;
+   border-radius: 0.6rem;
+   transition: 0.3s all ease-in;
+}
+
+.btn:hover {
+   opacity: 1;
+}
+
+.delete-btn i {
+   color: red;
+}
+
+.edit-btn i{
+   color: green;
+}
+
+.delete-btn i:hover, .edit-btn i:hover {
+   cursor: pointer;
+   opacity: 0.6;
+   transition: 0.3s all ease-in;
+}
+
+.task-row .delete-btn, .edit-btn {
+   padding: 0.6rem;
+   font-size: 0.95rem;
+   border-radius: 5px;
+   border: none;
+   font-size: 1.2rem;
+   background-color: transparent;
+}
+
+/* Table */
+table {
+   max-width: 95%;
+   margin: 20px auto;
+   border-collapse: collapse;
+   padding: 10px;
+}
+
+table th {
+   margin: 5px;
+   border-bottom: 1px solid #000;
+}
+
+table tr, th, td {
+   padding: 15px;
+}
+
+.task-row .task {
+   text-transform: capitalize;
+   font-size: 1.2rem;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 500px) {
+   * {
+      font-size: 0.95rem;
+   }
+
+   h1 {
+      font-size: 1.6rem;
+   }
+
+   .input-tasks-div input[type="text"] {
+      width: 55%;
+   }
+}
